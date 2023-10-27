@@ -2,3 +2,12 @@ on:
   push:
     branches:
     - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  steps:
+   - name: Run a one-line script
+     uses: actions/checkout@v1
+   - name: Run a one-line script
+     run: echo Hello, world!
+    
