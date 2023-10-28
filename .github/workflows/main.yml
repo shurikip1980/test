@@ -10,5 +10,9 @@ jobs:
         uses: actions/checkout@v1
         
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: echo "${{ secrets.key }}"
+        
+      - name: Deploy progect
+        # run: 'ssh -p 22 -i "${{ secrets.key }}" -o StrictHostKeyChecking=no" --archive --compress --delete . shurik@https://f02b-188-163-24-9.ngrok-free.app'
+        
     
