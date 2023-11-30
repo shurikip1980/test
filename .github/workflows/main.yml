@@ -17,6 +17,6 @@ jobs:
         run: chmod 600 "$HOME/.ssh/key"
         
       - name: Deploy progect
-        run: rsync -arvz -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no shurik@134.249.76.8:8080" --archive --compress --delete . /home/shurik/www3/
+        run: rsync -arvz -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no shurik@134.249.76.8:8080" --archive --compress --delete . /home/shurik/www3
         
     
